@@ -13,9 +13,26 @@ class StudentManager {
         // Khởi tạo dữ liệu mẫu nếu localStorage trống
         if (this.listStudent.length === 0) {
             this.listStudent = [
-                new Student("1", "Nguyễn Văn An", 20, "https://api.dicebear.com/7.x/adventurer/svg?seed=An", "1"),
-                new Student("2", "Trần Thị Bình", 22, "https://api.dicebear.com/7.x/adventurer/svg?seed=Binh", "2"),
-                new Student("3", "Lê Hoàng Cường", 19, "https://api.dicebear.com/7.x/adventurer/svg?seed=Cuong", "1")
+                new Student("SV001", "Nguyễn Văn An", 20, "https://api.dicebear.com/7.x/adventurer/svg?seed=An", "1"),
+                new Student("SV002", "Trần Thị Bình", 22, "https://api.dicebear.com/7.x/adventurer/svg?seed=Binh", "2"),
+                new Student("SV003", "Lê Hoàng Cường", 19, "https://api.dicebear.com/7.x/adventurer/svg?seed=Cuong", "1"),
+                new Student("SV004", "Phạm Minh Duy", 21, "https://api.dicebear.com/7.x/adventurer/svg?seed=Duy", "2"),
+                new Student("SV005", "Hoàng Thị Emy", 20, "https://api.dicebear.com/7.x/adventurer/svg?seed=Emy", "3"),
+                new Student("SV006", "Võ Minh Phong", 23, "https://api.dicebear.com/7.x/adventurer/svg?seed=Phong", "1"),
+                new Student("SV007", "Đặng Thu Giang", 21, "https://api.dicebear.com/7.x/adventurer/svg?seed=Giang", "2"),
+                new Student("SV008", "Bùi Quốc Huy", 22, "https://api.dicebear.com/7.x/adventurer/svg?seed=Huy", "3"),
+                new Student("SV009", "Cao Thị Ích", 20, "https://api.dicebear.com/7.x/adventurer/svg?seed=Ich", "1"),
+                new Student("SV010", "Tạ Minh Khánh", 21, "https://api.dicebear.com/7.x/adventurer/svg?seed=Khanh", "2"),
+                new Student("SV011", "Ngô Thị Linh", 19, "https://api.dicebear.com/7.x/adventurer/svg?seed=Linh", "3"),
+                new Student("SV012", "Lý Văn Minh", 22, "https://api.dicebear.com/7.x/adventurer/svg?seed=Minh", "1"),
+                new Student("SV013", "Mã Thị Ngân", 20, "https://api.dicebear.com/7.x/adventurer/svg?seed=Ngan", "2"),
+                new Student("SV014", "Nông Văn Ơn", 23, "https://api.dicebear.com/7.x/adventurer/svg?seed=On", "3"),
+                new Student("SV015", "Phan Thị Phương", 21, "https://api.dicebear.com/7.x/adventurer/svg?seed=Phuong", "1"),
+                new Student("SV016", "Quách Minh Quân", 20, "https://api.dicebear.com/7.x/adventurer/svg?seed=Quan", "2"),
+                new Student("SV017", "Rơ Thị Rê", 22, "https://api.dicebear.com/7.x/adventurer/svg?seed=Re", "3"),
+                new Student("SV018", "Sử Minh Sơn", 19, "https://api.dicebear.com/7.x/adventurer/svg?seed=Son", "1"),
+                new Student("SV019", "Tô Thị Tâm", 21, "https://api.dicebear.com/7.x/adventurer/svg?seed=Tam", "2"),
+                new Student("SV020", "Vũ Văn Úc", 23, "https://api.dicebear.com/7.x/adventurer/svg?seed=Uc", "3")
             ];
             this.luuLocalStorage();
         }
