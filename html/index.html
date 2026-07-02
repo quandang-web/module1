@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sinh Viên - SMS</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h2>🎓 SMS</h2>
+
+            <!-- Thông tin tài khoản đăng nhập -->
+            <div id="sidebar-user-profile" class="user-profile-sidebar" style="display: none;">
+                <div class="name" id="user-display-name">Guest</div>
+                <div class="role" id="user-display-role">User</div>
+            </div>
+
+            <!-- Các nút chức năng chính -->
+            <button id="btn-dashboard" onclick="hienThiDashboard()">🏠 Dashboard</button>
+            <button id="btn-students" onclick="hienThiHome()">👨‍🎓 Sinh viên</button>
+            <button id="btn-add-student" onclick="hienThiFormTao()">➕ Thêm sinh viên</button>
+            <button id="btn-classes" onclick="hienThiDanhSachLop()">🏫 Quản lý lớp</button>
+            <button id="btn-add-class" onclick="hienThiFormThemLop()">➕ Thêm lớp</button>
+            
+            <hr id="sidebar-divider">
+
+            <!-- Các nút Đăng nhập / Đăng ký / Đăng xuất -->
+            <button id="btn-login" onclick="hienThiDangNhap()">🔑 Đăng nhập</button>
+            <button id="btn-register" onclick="hienThiDangKy()">📝 Đăng ký</button> 
+            <button id="btn-logout" onclick="dangXuat()" style="display: none;">🚪 Đăng xuất</button>
+
+            <!-- Khung tìm kiếm ở sidebar -->
+            <div class="search-wrapper" id="sidebar-search-wrapper">
+                <hr>
+                <input type="text" id="keyword" placeholder="Tìm sinh viên nhanh..." oninput="timKiemSinhVienNhanh()">
+            </div>
+
+        </div>
+
+        <!-- Nội dung -->
+        <div class="content">
+
+            <div class="header">
+                <div>
+                    <h1>Student Management System</h1>
+                    <p id="header-subtitle">Hệ thống quản lý thông tin học tập của học viên</p>
+                </div>
+                <div id="header-user-badge"></div>
+            </div>
+
+            <!-- Nơi render nội dung động -->
+            <div id="main">
+                <!-- Nội dung sẽ được hiển thị qua index.js -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Nạp các lớp Model trước -->
+    <script src="/js/student/Student.js"></script>
+    <script src="/js/class/ClassRoom.js"></script>
+    <script src="/js/account/Account.js"></script>
+
+    <!-- Nạp các lớp Manager chứa logic dữ liệu -->
+    <script src="/js/student/StudentManager.js"></script>
+    <script src="/js/class/ClassManager.js"></script>
+    <script src="/js/account/AccountManager.js"></script>
+
+    <!-- Nạp file điều khiển giao diện chính -->
+    <script src="/js/index.js"></script>
+
+</body>
+</html>
